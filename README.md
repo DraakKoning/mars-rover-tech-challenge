@@ -10,6 +10,7 @@
 * Collision exists.
 * A rover cannot be placed on a position that any of the previous rovers have moved to.
 * When a rover is going to move to the position of a rover that has moved, the rover will stop and it will not continue with the movement instructions.
+* When a rover's next move is out of bounds, the rover will stop and it will not continue with the movement instructions.
 
 ### How do I get set up ###
 
