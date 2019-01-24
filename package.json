@@ -1,0 +1,36 @@
+{
+  "name": "mars-rover-tech-challenge",
+  "version": "1.0.0",
+  "description": "A solution to Google's mars rover tech challenge",
+  "main": "index.js",
+  "scripts": {
+    "watch": "export NODE_ENV=development || SET \"NODE_ENV=development\" && nodemon ./bin/www.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha spec/**/*.test.js --reporter dot --exit",
+    "start": "node ./bin/www.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "before",
+      "beforeEach",
+      "afterEach"
+    ]
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "license": "MIT"
+}
