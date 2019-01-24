@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 
 
 // Imports for the app routes (controllers) for the app
+const main = require('./routes/main');
 
 // create the express app
 const app = express();
@@ -58,7 +59,7 @@ app.use('/health_check', function (req, res, next) {
 });
 
 // Load the app routes that were imported
-// app.use('/users', users)
+app.use('/', main);
 
 // catch routes that do not exist
 app.use(function (req, res, next) {
