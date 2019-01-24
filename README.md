@@ -16,9 +16,11 @@
 
 ### How do I get set up ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+1. Make sure that you have the latest verison of [Node.js](https://nodejs.org/en/) and NPM installed. You can check that they are installed by checking their versions:
+    * for Node use `node -v` in the terminal (Make sure you have atleast version 9)
+    * for NPM us `npm -v` in the terminal
+2. Download the zip of the project files and extract it in a folder on your computer.
+3. Use a terminal and navigate into the folder where the project files are.
+4. Run `npm install` to download all the dependant libraries
+5. As a final step, run the tests to make sure everything is in order by typing `npm run test` in your terminal
+6. You can now start the server with `npm run start`. The server sould be accessible on `localhost:3000` 
