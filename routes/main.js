@@ -33,7 +33,7 @@ const validateInput = function (req, res, next) {
 };
 
 // add the exploreMars route to the express router.
-router.post('/explore_mars', validateInput, function (req, res, next) {
+router.post('/explore_mars', validateInput, function (req, res) {
     // create a platue
     const sizeX = req.body.platue.size_x;
     const sizeY = req.body.platue.size_y;
