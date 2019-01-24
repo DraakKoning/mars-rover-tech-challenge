@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* This repository is an implementation of the Google mars rover tech challenge written in Express.js as aa REST api.
+* This repository is an implementation of the Google mars rover tech challenge written in Express.js as a REST api.
 * Version: 1.0.0
 
 ### Assumptions regarding this challenge ###
@@ -24,3 +24,13 @@
 4. Run `npm install` to download all the dependant libraries
 5. As a final step, run the tests to make sure everything is in order by typing `npm run test` in your terminal
 6. You can now start the server with `npm run start`. The server sould be accessible on `localhost:3000` 
+
+### Using postman to test out the api ###
+
+For a starting point, I have included a Postman collection file that contains the basic info to do a post request on the `explore_mars` route. To get started with Postman:
+
+1. Download it [here](https://www.getpostman.com/)
+2. After it has downloaded, go to `File->Import` in the top left corner and select the file in the postman folder of this project.
+3. On your left hand side in the collections menu, you should now see a folder called **ExploreMars**. Click on it to expand the request inside.
+4. Now click on the request to load it into the client and press **send**.
+5. If you want to change some of the request data, click on the body tab in the middle. Yous should see a JSON representation of the data.

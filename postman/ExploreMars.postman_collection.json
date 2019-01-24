@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "6a709098-fcd7-45ea-8cbc-e67dac20f9f4",
+		"name": "ExploreMars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Explore Mars",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"platue\": {\n\t\t\"size_x\": 5,\n\t\t\"size_y\": 5,\n\t\t\"rovers\": [{\n\t\t\t\"x\": 1,\n\t\t\t\"y\": 2,\n\t\t\t\"cardinal_point\": \"N\",\n\t\t\t\"movement_instruction\": \"LMLMLMLMM\"\n\t\t},\n\t\t{\n\t\t\t\"x\": 3,\n\t\t\t\"y\": 3,\n\t\t\t\"cardinal_point\": \"E\",\n\t\t\t\"movement_instruction\": \"MMRMMRMRRM\"\n\t\t}]\n\t}\n}"
+				},
+				"url": "http://localhost:3000/explore_mars"
+			},
+			"response": []
+		}
+	]
+}
